@@ -18,11 +18,16 @@
      --border: #e8e4df;
  }
 
+ html {
+     overflow-x: hidden;
+ }
+
  body {
      font-family: 'Lato', sans-serif;
      line-height: 1.6;
      color: var(--text);
      background-color: var(--green-mid);
+     overflow-x: hidden;
  }
 
  .container {
