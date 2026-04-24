@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABEVE - Serviço de Amparo e Bem-estar da Velhice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-con" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    <nav class="container">
+        <a href="#"> <img src="Logo SABEVE .jpg" alt="SABEVE Logo" class="logo"></a>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#oferecemos">O Lar</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#identidade">Identidade</a></li>
+            <li><a href="fotos.html">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="container">
+            <h1>SABEVE</h1>
+            <p>Serviço de Amparo e Bem-Estar na Velhice — Um lar de cuidado, dignidade e qualidade de vida para idosos desde 1970</p>
+            <p class="hero-sub">Aqui você será tratado com carinho e respeito.</p>
+        </div>
+    </div>
+</section>
+
+<!-- NOSSOS SERVIÇOS (CAROUSEL) -->
+<section class="carousel-section reveal fade-up" id="servicos">
+    <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Cuidado integral com equipe multiprofissional, 24 horas por dia</p>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+
+                <div class="carousel-slide">
+                    <h3>Assistência 24 Horas</h3>
+                    <p>Nossa equipe de enfermagem e cuidadores está presente em todos os momentos para garantir bem-estar e segurança.</p>
+                    <ul class="accordion-list">
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Técnicas de Enfermagem <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Aferição de sinais vitais, administração de medicamentos, dietas enterais, oxigenoterapia, curativos e nebulização.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Equipe de Cuidadores <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Conforto e higiene, auxílio na alimentação e locomoção, atividades físicas e de lazer, mudanças de posição e comunicação com a enfermagem sobre alterações de saúde.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Serviço de Enfermagem <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Enfermeiros coordenam e avaliam o plano de cuidado de cada residente diariamente, acompanhando de perto as necessidades individuais.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Atendimento Médico Geriátrico <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Contamos com médico geriatra para acompanhamento especializado dos residentes.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carousel-slide">
+                    <h3>Atividades e Bem-estar</h3>
+                    <p>Promovemos atividades diárias que estimulam corpo e mente, proporcionando qualidade de vida e alegria.</p>
+                    <ul class="accordion-list">
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Arte e Cultura <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Arte terapia, recitais, celebrações e oficinas de culinária que estimulam a criatividade e o prazer.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Estímulo Cognitivo e Físico <span class="icon"><i class="fa-solid fa-chevron-down"></i></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Jogos, rodas de conversa e atividades de fisioterapia para manter a mente e o corpo ativos.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Integração Social <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Passeios, participação em eventos na cidade e atividade geracional com integração de grupos escolares.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Assistência Espiritual <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Suporte espiritual independente de credo, cor ou confissão religiosa, respeitando as crenças de cada residente.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carousel-slide">
+                    <h3>Nutrição e Alimentação</h3>
+                    <p>Serviço completo de nutrição com acompanhamento individual e refeições preparadas com carinho e qualidade.</p>
+                    <ul class="accordion-list">
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Acompanhamento Nutricional Individual <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Cada residente recebe avaliação e acompanhamento personalizado com nutricionista, respeitando as necessidades e individualidades.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Cardápio Diferenciado <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Cardápio balanceado, adaptado para dietas especiais quando necessário, com todas as refeições incluídas na estadia.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carousel-slide">
+                    <h3>Infraestrutura e Higiene</h3>
+                    <p>Toda a estrutura necessária para garantir conforto, higiene e bem-estar em um ambiente seguro e acolhedor.</p>
+                    <ul class="accordion-list">
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Acomodações <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Quartos individuais ou duplos com banheiros privativos, espaços amplos e bem arejados, sem escadas, em ambiente cercado de natureza.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Higienização e Lavanderia <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Serviço completo de higienização dos espaços e lavanderia, garantindo higiene e desinfecção em todos os ambientes.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                Localização Privilegiada <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>A SABEVE está localizada a 10 km do centro de Ijuí, num espaço privilegiado com muito verde, tranquilidade e qualidade de vida.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="previousSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-indicators" id="indicators"></div>
+        </div>
+    </div>
+</section>
+
+<div class="animated-divider"></div>
+<!-- O QUE OFERECEMOS -->
+<section class="services reveal fade-in" id="oferecemos">
+    <div class="container">
+        <h2 class="section-title">O Que Oferecemos</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.8)">Um ambiente seguro, acolhedor e repleto de carinho</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Ambiente Seguro</h3>
+                <img src="IMG-20250903-WA0018.jpg" alt="Ambiente Seguro">
+                <p>Espaços planejados para proporcionar conforto, segurança e sensação de lar. Visitas livres, sem necessidade de agendamento.</p>
+            </div>
+            <div class="service-card">
+                <h3>Assistência 24 Horas</h3>
+                <img src="subhappy.jpeg" alt="Assistência 24 Horas">
+                <p>Equipe disponível 24 horas garantindo o cuidado, a segurança e o bem-estar de cada residente com atenção individualizada.</p>
+            </div>
+            <div class="service-card">
+                <h3>Atividades e Bem-estar</h3>
+                <img src="IMG-20250903-WA0020.jpg" alt="Atividades e Bem-estar">
+                <p>Atividades diárias que estimulam o físico e o cognitivo, promovendo qualidade de vida, autonomia e momentos de alegria.</p>
+            </div>
+        </div>
+    </div>
+    <a href="fotos.html" class="cta-button green-2">Veja mais sobre
+
+    </a>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais reveal slide-in-left">
+    <div class="container">
+        <h2 class="section-title">Nossos Diferenciais</h2>
+        <p class="section-subtitle">O que torna a SABEVE um lugar especial para viver</p>
+        <div class="dif-grid">
+            <div class="dif-card">
+                <h4><i class="fa-regular fa-clock"></i> Visitas Livres</h4>
+                <p>Não é preciso marcar horário para visitar seu familiar. Venha quando quiser!</p>
+            </div>
+            <div class="dif-card">
+                <h4><i class="fa-solid fa-user"></i> Respeito à Individualidade</h4>
+                <p>Cada residente é único. Respeitamos suas preferências, rotinas e necessidades.</p>
+            </div>
+            <div class="dif-card">
+                <h4><i class="fa-solid fa-hand-fist"></i> Estímulo à Autonomia</h4>
+                <p>Incentivamos o autocuidado e a independência, preservando a dignidade de cada idoso.</p>
+            </div>
+            <div class="dif-card">
+                <h4><i class="fa-solid fa-user-doctor"></i> Equipe Multiprofissional</h4>
+                <p>Fisioterapeuta, Assistente Social, Psicólogo, Nutricionista, Recreadora e muito mais.</p>
+            </div>
+            <div class="dif-card">
+                <h4><i class="fa-solid fa-handshake"></i> Vínculo com Familiares</h4>
+                <p>Duas reuniões anuais informativas com os familiares. Somos o elo entre cuidadores, família e gestão.</p>
+            </div>
+            <div class="dif-card">
+                <h4><i class="fa-solid fa-leaf"></i> Localização Privilegiada</h4>
+                <p>A 10 km do centro de Ijuí, em meio a muito verde, tranquilidade e ar puro.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="animated-divider"></div>
+<!-- IDENTIDADE INSTITUCIONAL -->
+<section class="dependencia reveal fade-up" id="identidade">
+    <div class="container">
+        <h2 class="section-title">Identidade Institucional</h2>
+        <p class="section-subtitle">Conheça a Visão, o Princípio e os Valores que orientam a SABEVE. <br> Clique para saber mais sobre cada item.</p>
+        <div class="dep-accordion">
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Visão</span>
+                    <div class="dep-controls">
+                        <span class="badge"><i class="fa-solid fa-eye"></i></span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <p>Consolidar a SABEVE como Instituição de referência no acolhimento e cuidado das pessoas idosas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Princípio</span>
+                    <div class="dep-controls">
+                        <span class="badge"><i class="fa-solid fa-cross"></i></span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <p>Assegurar o Amor Cristão, que é solidário, que busca amparar pessoas que precisam de ajuda e acolhimento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Valores</span>
+                    <div class="dep-controls">
+                        <span class="badge"><i class="fa-solid fa-star"></i></span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <ul class="valores-list">
+                            <li>O testemunho Cristão na vivência comunitária;</li>
+                            <li>A valorização da vida através das ações diaconais;</li>
+                            <li>Responsabilidade Social;</li>
+                            <li>Postura ética nas relações interpessoais e interinstitucionais;</li>
+                            <li>Busca por excelência na organização e funcionalidade da Instituição;</li>
+                            <li>A inovação como busca permanente de qualidade no cuidado;</li>
+                            <li>Sustentabilidade.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="animated-divider"></div>
+<!-- MODALIDADES -->
+<section class="modalidades reveal fade-up" id="modalidades">
+    <div class="container">
+        <h2 class="section-title">Lar ou Temporada</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.8)">Escolha a modalidade ideal para sua família</p>
+        <div class="modal-grid">
+            <div class="modal-card">
+                <div class="modal-icon"><i class="fa-solid fa-house"></i></div>
+                <h3>Moradia Permanente</h3>
+                <p>Um lar para viver com tranquilidade, proteção e segurança. Oferecemos qualidade de vida em ambiente acolhedor, com todos os cuidados necessários para uma vida plena e feliz.</p>
+            </div>
+            <div class="modal-card">
+                <div class="modal-icon"><i class="fa-solid fa-sun"></i></div>
+                <h3>Moradia Temporária</h3>
+                <p>Ideal para famílias que precisam viajar ou para recuperação após alta hospitalar. Cuidados especializados, inclusive curativos. A família fica tranquila enquanto seu familiar se recupera com segurança.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GRAU DE DEPENDÊNCIA / VALORES -->
+<section class="dependencia reveal slide-in-right" id="valores">
+    <div class="container">
+        <h2 class="section-title">Modalidades de Cuidado</h2>
+        <p class="section-subtitle">Conforme a ANVISA, avaliamos o grau de dependência para oferecer o cuidado mais adequado a cada residente. <br> Clique para saber mais sobre cada grau.</p>
+        <div class="dep-accordion">
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Grau I — Pessoa Independente</span>
+                    <div class="dep-controls">
+                        <span class="badge">GRAU I</span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <p>Não necessita de auxílio para as atividades básicas da vida diária. Realiza de forma independente higiene, alimentação, vestuário e locomoção. O valor da mensalidade considera o tipo de quarto (individual ou compartilhado).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Grau II — Pessoa Semidependente</span>
+                    <div class="dep-controls">
+                        <span class="badge">GRAU II</span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <p>Necessita de ajuda para até 3 atividades da vida diária, como banho, alimentação ou vestir-se. Nossa equipe oferece suporte pontual preservando ao máximo a autonomia do residente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Grau III — Pessoa Dependente</span>
+                    <div class="dep-controls">
+                        <span class="badge">GRAU III</span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <p>Necessita de auxílio para mais de 3 atividades da vida diária, ou apresenta comprometimento cognitivo. Nossa equipe oferece cuidado integral e contínuo com atenção especializada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-item">
+                <button class="dep-btn" onclick="toggleDep(this)">
+                    <span class="dep-title">Valores e Formas de Pagamento</span>
+                    <div class="dep-controls">
+                        <span class="badge"><i class="fa-solid fa-dollar-sign"></i></span>
+                        <span class="saiba-mais">Clique Aqui</span>
+                        <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div class="dep-content">
+                    <div class="content-inner">
+                        <p>Os valores variam conforme o tipo de quarto (individual ou compartilhado) e o grau de dependência. Disponíveis nas modalidades diária ou mensalidade. Não cobramos décimo nas mensalidades. Entre em contato para conhecer os valores atuais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="animated-divider"></div>
+<!-- EQUIPE -->
+<section class="team" id="equipe">
+    <div class="container">
+        <h2 class="section-title" style="color:white; text-align:center; margin-bottom:16px;">Nossa Equipe</h2>
+        <p class="team-intro">Contamos com uma equipe multidisciplinar de profissionais qualificados e dedicados ao cuidado integral dos nossos residentes:</p>
+        <div class="team-list">
+            <span class="team-member">ㅤ<i class="fa-solid fa-brain"></i>ㅤPiscologia ㅤ</span>
+            <span class="team-member"><i class="fa-solid fa-hand"></i> ㅤAssistência Social</span>
+            <span class="team-member"><i class="fa-solid fa-person-walking"></i> Fisioterapia</span>
+            <span class="team-member"><i class="fa-solid fa-apple-whole"></i> Nutrição</span>
+            <span class="team-member"><i class="fa-solid fa-puzzle-piece"></i> Recreação / Pedagogia</span>
+            <span class="team-member"><i class="fa-solid fa-user-nurse"></i> Enfermeiras</span>
+            <span class="team-member"><i class="fa-solid fa-stethoscope"></i> Técnicas de Enfermagem</span>
+            <span class="team-member"><i class="fa-solid fa-hands-holding"></i> Cuidadores</span>
+            <span class="team-member"><i class="fa-solid fa-user-doctor"    ></i>ㅤ Geriatraㅤ</span>
+            <span class="team-member"><i class="fa-solid fa-screwdriver-wrench"></i> Equipes de Apoio</span>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE / HISTÓRIA -->
+<section class="about reveal fade-up" id="sobre">
+    <div class="container">
+        <div class="about-content">
+            <h2 class="section-title">Nossa História</h2>
+            <p>A SABEVE foi fundada em 28 de novembro de 1970. É uma entidade civil, sem fins lucrativos, com a finalidade de promover amparo, auxílio e bem-estar físico e espiritual para idosos, independente de credo, cor ou confissão religiosa.</p>
+            <p>Somos uma ILPI — Instituição de Longa Permanência para Idosos — que oferece um verdadeiro lar: com tranquilidade, proteção, segurança e qualidade de vida. Nossos espaços e atividades foram pensados para que os residentes se sintam integrados e úteis em seu envelhecimento.</p>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="number">1970</span>
+                    <span class="label">Ano de Fundação</span>
+                </div>
+                <div class="stat">
+                    <span class="number">55+</span>
+                    <span class="label">Anos de Cuidado</span>
+                </div>
+                <div class="stat">
+                    <span class="number">24h</span>
+                    <span class="label">Assistência</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="animated-divider"></div>
+<!-- VOLUNTÁRIO / TRABALHE CONOSCO -->
+<section class="voluntario reveal fade-in">
+    <div class="container">
+        <h2 class="section-title" style="color:white; text-align:center; margin-bottom:48px;">Faça Parte da SABEVE</h2>
+        <div class="vol-grid">
+            <div class="vol-card">
+                <div class="vol-icon"><i class="fa-solid fa-hands-praying"></i></div>
+                <h3>Seja Voluntário</h3>
+                <p>Temos muitas atividades que podem ser realizadas com os idosos por voluntários. Venha contribuir com seu tempo e carinho!</p>
+                <a href="#contato" class="cta-button">Quero ser voluntário</a>
+            </div>
+            <div class="vol-card">
+                <div class="vol-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Trabalhe Conosco</h3>
+                <p>Faça parte da nossa equipe multiprofissional e dedique-se ao cuidado de quem mais precisa. Envie seu currículo!</p>
+                <a href="#contato" class="cta-button">Enviar currículo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contato">
+    <div class="container">
+        <h2 class="section-title" style="text-align:center;">Entre em Contato</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><strong><i class="fa-solid fa-phone"></i> Contato Telefônico:</strong><br>+55 55 98423-7156<br></p>
+                <p><strong><i class="fa-solid fa-location-dot"></i> Endereço:</strong><br>Rodovia RS 522, km 2, Linha Oeste<br>Ijuí — RS</p>
+                <p><strong><i class="fa-solid fa-calendar-days"></i> Horário de Visitas:</strong><br>Segunda a Domingo<br><em>Visitas livres, sem necessidade de agendamento</em></p>
+
+            </div>
+            <a href="https://wa.me/5555984237156" class="cta-button green" target="_blank">Agende uma Visita</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 SABEVE — Serviço de Amparo e Bem-Estar na Velhice. Todos os direitos reservados.</p>
+        <p>Cuidando com amor, respeito e dignidade desde 1970.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

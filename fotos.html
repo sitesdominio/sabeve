@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria — SABEVE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link rel="icon" type="image/x-con" href="favicon.ico">
+
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="header-brand">
+        <img src="Logo_SABEVE_-removebg-preview.png" alt="SABEVE">
+    </a>
+    <a href="index.html" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i> Voltar ao site
+    </a>
+</header>
+
+<div class="gallery-hero">
+    <h1>Nossa Galeria</h1>
+    <div class="hero-line"></div>
+    <p>Momentos de vida, cuidado e alegria no nosso lar</p>
+</div>
+
+<div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="fisioterapia">Fisioterapia</button>
+    <button class="filter-btn" data-filter="atividades">Atividades</button>
+    <button class="filter-btn" data-filter="convivio">Convívio</button>
+</div>
+
+<div class="gallery-grid" id="gallery">
+
+    <div class="gallery-item" data-category="fisioterapia" data-index="0">
+        <img src="foto1.png" alt="Fisioterapia">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Fisioterapia</span>
+            <p class="overlay-caption">Exercícios para o bem-estar físico</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="atividades" data-index="1">
+        <img src="foto2.png" alt="Arte terapia">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Arte Terapia</span>
+            <p class="overlay-caption">Criatividade e expressão artística</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="atividades" data-index="2">
+        <img src="foto3.png" alt="Estímulo cognitivo">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Estímulo Cognitivo</span>
+            <p class="overlay-caption">Jogos que mantêm a mente ativa</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="convivio" data-index="3">
+        <img src="foto4.png" alt="Momento de lazer">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Convívio</span>
+            <p class="overlay-caption">Tranquilidade e momentos de prazer</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="atividades" data-index="4">
+        <img src="foto5.png" alt="Jardinagem">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Atividades</span>
+            <p class="overlay-caption">Contato com a natureza e o verde</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="atividades" data-index="5">
+        <img src="foto6.png" alt="Oficina de culinária">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Oficina de Culinária</span>
+            <p class="overlay-caption">Cozinhando juntos com alegria</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="convivio" data-index="6">
+        <img src="foto7.png" alt="Convívio">
+        <div class="gallery-overlay">
+            <span class="overlay-tag">Convívio</span>
+            <p class="overlay-caption">Laços e histórias compartilhadas</p>
+            <div class="overlay-expand"><i class="fa-solid fa-expand"></i></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-arrow lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lb-arrow lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-inner">
+        <img class="lightbox-img" id="lbImg" src="" alt="">
+        <div class="lightbox-caption">
+            <span class="overlay-tag" id="lbTag"></span>
+            <p id="lbCaption"></p>
+        </div>
+        <div class="lb-thumbs" id="lbThumbs"></div>
+    </div>
+    <div class="lb-counter" id="lbCounter"></div>
+</div>
+<br>
+<div class="gallery-footer">
+    <p>&copy; 2025 SABEVE — <a href="index.html">Voltar ao site</a></p>
+</div>
+
+<script src="fotos.js"></script>
+</body>
+</html>
